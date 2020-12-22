@@ -10,7 +10,7 @@ class Chatbot():
         self.input_msg=""
         self.user_name=""
         self.key_len =key
-        self.phrase = ""
+
        
        
     def take_input(self):
@@ -39,7 +39,7 @@ class Chatbot():
                         if '{0}' in response:
                             self.phrase = match.group(1)
                             ans=random.choice(rules[pattern])
-
+                            time.sleep(random.choice(time_frame))
                             print(ans + self.phrase) 
       
             elif self.input_msg in responses:    
