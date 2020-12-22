@@ -50,6 +50,7 @@ rules = {'do you think (.*)': ['if {0}? Absolutely.', 'No chance'],
         'I want (.*)': ['What would it mean if you got {0}', 'Why do you want {0}', "What's stopping you from getting {0}"],
         'if (.*)': ["Do you really think it's likely that {0}", 'Do you wish that {0}', 'What do you think about {0}', 'Really--if {0}']}
 
+phrases_replacement ={"you":'I',"your":"my, mine","I am":"you are","you are":"I am"}
 
 
 bot_template ="Bot:{0}\t"
